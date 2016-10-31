@@ -1,0 +1,19 @@
+# BoW example
+**Authors:** rongbohou, email:rongbohou@163.com
+
+some bag of word example of doing train the vocabulary,and extract the BoW descriptor for given image
+
+
+# Require: 
+ OpenCV 2.4.x
+
+# build
+mkdir build ＆＆ cd build 
+cmake  .. 
+make 
+
+# usage
+(1) ./bin/bow_sift
+
+
+
