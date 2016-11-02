@@ -12,6 +12,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
+  "/usr/local/lib/cmake/DLib/DLibConfig.cmake"
   "/usr/local/share/OpenCV/OpenCVConfig-version.cmake"
   "/usr/local/share/OpenCV/OpenCVConfig.cmake"
   "/usr/local/share/OpenCV/OpenCVModules-release.cmake"
@@ -45,5 +46,6 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
+  "src/CMakeFiles/DBoW2_demo.dir/DependInfo.cmake"
   "src/CMakeFiles/bow_sift.dir/DependInfo.cmake"
   )

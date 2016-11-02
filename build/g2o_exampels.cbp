@@ -8,80 +8,80 @@
       <Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\usr\local\share\OpenCV\;" />
       <Build>
       <Target title="all">
-         <Option working_dir="/home/bobo/code/BoW/build" />
+         <Option working_dir="/home/bobo/code/BoW_examples/build" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/Makefile&quot;  VERBOSE=1 all" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       <Target title="rebuild_cache">
-         <Option working_dir="/home/bobo/code/BoW/build" />
+         <Option working_dir="/home/bobo/code/BoW_examples/build" />
          <Option type="4" />
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       <Target title="bow_sift">
-         <Option output="/home/bobo/code/BoW/bin/bow_sift" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/bobo/code/BoW/bin" />
+         <Option output="/home/bobo/code/BoW_examples/bin/bow_sift" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/BoW_examples/bin" />
          <Option object_output="./" />
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bobo/code/BoW/include" />
+            <Add directory="/home/bobo/code/BoW_examples/include" />
             <Add directory="/usr/local/include" />
             <Add directory="/usr/local/include/opencv" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/src/Makefile&quot;  VERBOSE=1 bow_sift" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/src/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 bow_sift" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       <Target title="bow_sift/fast">
-         <Option output="/home/bobo/code/BoW/bin/bow_sift" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/bobo/code/BoW/bin" />
+         <Option output="/home/bobo/code/BoW_examples/bin/bow_sift" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/BoW_examples/bin" />
          <Option object_output="./" />
          <Option type="1" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bobo/code/BoW/include" />
+            <Add directory="/home/bobo/code/BoW_examples/include" />
             <Add directory="/usr/local/include" />
             <Add directory="/usr/local/include/opencv" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/src/Makefile&quot;  VERBOSE=1 bow_sift/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/src/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 bow_sift/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       </Build>
-      <Unit filename="/home/bobo/code/BoW/src/BoFSIFT.cpp">
+      <Unit filename="/home/bobo/code/BoW_examples/src/BoFSIFT.cpp">
       </Unit>
-      <Unit filename="/home/bobo/code/BoW/CMakeLists.txt">
+      <Unit filename="/home/bobo/code/BoW_examples/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />
       </Unit>
-      <Unit filename="/home/bobo/code/BoW/src/CMakeLists.txt">
+      <Unit filename="/home/bobo/code/BoW_examples/src/CMakeLists.txt">
           <Option virtualFolder="CMake Files\src\" />
       </Unit>
-      <Unit filename="/home/bobo/code/BoW/../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+      <Unit filename="/home/bobo/code/BoW_examples/../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
           <Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\" />
       </Unit>
-      <Unit filename="/home/bobo/code/BoW/../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+      <Unit filename="/home/bobo/code/BoW_examples/../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
           <Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\" />
       </Unit>
-      <Unit filename="/home/bobo/code/BoW/../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+      <Unit filename="/home/bobo/code/BoW_examples/../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
           <Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\" />
       </Unit>
-      <Unit filename="/home/bobo/code/BoW/../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+      <Unit filename="/home/bobo/code/BoW_examples/../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
           <Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\" />
       </Unit>
    </Project>

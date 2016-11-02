@@ -1,1 +1,2 @@
-/home/bobo/code/BoW/build/src/CMakeFiles/bow_sift.dir
+/home/bobo/code/BoW_examples/build/src/CMakeFiles/DBoW2_demo.dir
+/home/bobo/code/BoW_examples/build/src/CMakeFiles/bow_sift.dir

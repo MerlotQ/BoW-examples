@@ -50,19 +50,21 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bobo/code/BoW
+CMAKE_SOURCE_DIR = /home/bobo/code/BoW_examples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bobo/code/BoW/build
+CMAKE_BINARY_DIR = /home/bobo/code/BoW_examples/build
 
 #=============================================================================
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
+src/all: src/CMakeFiles/DBoW2_demo.dir/all
 src/all: src/CMakeFiles/bow_sift.dir/all
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
+src/clean: src/CMakeFiles/DBoW2_demo.dir/clean
 src/clean: src/CMakeFiles/bow_sift.dir/clean
 .PHONY : src/clean
 
@@ -71,13 +73,48 @@ src/preinstall:
 .PHONY : src/preinstall
 
 #=============================================================================
+# Target rules for target src/CMakeFiles/DBoW2_demo.dir
+
+# All Build rule for target.
+src/CMakeFiles/DBoW2_demo.dir/all:
+	$(MAKE) -f src/CMakeFiles/DBoW2_demo.dir/build.make src/CMakeFiles/DBoW2_demo.dir/depend
+	$(MAKE) -f src/CMakeFiles/DBoW2_demo.dir/build.make src/CMakeFiles/DBoW2_demo.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bobo/code/BoW_examples/build/CMakeFiles  1
+	@echo "Built target DBoW2_demo"
+.PHONY : src/CMakeFiles/DBoW2_demo.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/DBoW2_demo.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/DBoW2_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW_examples/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/DBoW2_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW_examples/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/DBoW2_demo.dir/rule
+
+# Convenience name for target.
+DBoW2_demo: src/CMakeFiles/DBoW2_demo.dir/rule
+.PHONY : DBoW2_demo
+
+# clean rule for target.
+src/CMakeFiles/DBoW2_demo.dir/clean:
+	$(MAKE) -f src/CMakeFiles/DBoW2_demo.dir/build.make src/CMakeFiles/DBoW2_demo.dir/clean
+.PHONY : src/CMakeFiles/DBoW2_demo.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/DBoW2_demo.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target src/CMakeFiles/bow_sift.dir
 
 # All Build rule for target.
 src/CMakeFiles/bow_sift.dir/all:
 	$(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/depend
 	$(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bobo/code/BoW/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bobo/code/BoW_examples/build/CMakeFiles  2
 	@echo "Built target bow_sift"
 .PHONY : src/CMakeFiles/bow_sift.dir/all
 
@@ -87,9 +124,9 @@ all: src/CMakeFiles/bow_sift.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/bow_sift.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW_examples/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bow_sift.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW_examples/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/bow_sift.dir/rule
 
 # Convenience name for target.

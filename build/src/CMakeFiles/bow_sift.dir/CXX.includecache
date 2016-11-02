@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/bobo/code/BoW/src/BoFSIFT.cpp
+/home/bobo/code/BoW_examples/src/BoFSIFT.cpp
 iostream
 -
 vector

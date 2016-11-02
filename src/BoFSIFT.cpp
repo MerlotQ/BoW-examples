@@ -75,7 +75,7 @@ int main( int argc, char** argv )
 
     //prepare BOW descriptor extractor from the dictionary    
 	Mat dictionary; 
-	FileStorage fs("/home/bobo/code/BoW/data/dictionary.yml", FileStorage::READ);
+	FileStorage fs("/home/bobo/code/BoW_examples/data/dictionary.yml", FileStorage::READ);
         if(!fs.isOpened())
         {
            cerr << "Failed to open settings file  "<< endl;
@@ -83,7 +83,7 @@ int main( int argc, char** argv )
         }
 	fs["vocabulary"] >> dictionary;
 	fs.release();	
-    
+
 	//create a nearest neighbor matcher
 	Ptr<DescriptorMatcher> matcher(new FlannBasedMatcher);
 	//create Sift feature point extracter
@@ -101,10 +101,12 @@ int main( int argc, char** argv )
 	char * imageTag = new char[10];
 
 	//open the file to write the resultant descriptor
-	FileStorage fs1("/home/bobo/code/BoW/data/descriptor.yml", FileStorage::WRITE);	
-	
+	FileStorage fs1("/home/bobo/code/BoW_examples/data/descriptor.yml", FileStorage::WRITE);	
+	double dataset_num =4;
+	for(int i = 1; i < dataset_num+1;  i++)
+		{
 	//the image file with the location. change it according to your image file location
-	sprintf(filename,"/home/bobo/code/BoW/data/lena.jpg");		
+	sprintf(filename,"/home/bobo/code/BoW_examples/data/%01d.jpg",i);
 	//read the image
 	Mat img=imread(filename,CV_LOAD_IMAGE_GRAYSCALE);
 	double t = (double)cvGetTickCount();
@@ -118,18 +120,19 @@ int main( int argc, char** argv )
 	//extract BoW (or BoF) descriptor from given image
 	bowDE.compute(img,keypoints,bowDescriptor);
 
-        double bow_des_cost =  ((double)cvGetTickCount() - t)/((double)cvGetTickFrequency()*1000.);
-        cout<<"extract BoW descriptor cost "<<bow_des_cost<<"ms"<<endl;
+  double bow_des_cost =  ((double)cvGetTickCount() - t)/((double)cvGetTickFrequency()*1000.);
+  cout<<"extract BoW descriptor cost "<<bow_des_cost<<"ms"<<endl;
 
 	//prepare the yml (some what similar to xml) file
-	sprintf(imageTag,"img1");			
+	sprintf(imageTag,"img%01d",i);
 	//write the new BoF descriptor to the file
 	fs1 << imageTag << bowDescriptor;		//直方图归一化
 
 	//You may use this descriptor for classifying the image.
-			
+	}
 	//release the file storage
 	fs1.release();
+
 #endif
 	printf("done\n");	
     return 0;

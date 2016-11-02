@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bobo/code/BoW/src/BoFSIFT.cpp" "/home/bobo/code/BoW/build/src/CMakeFiles/bow_sift.dir/BoFSIFT.cpp.o"
+  "/home/bobo/code/BoW_examples/src/BoFSIFT.cpp" "/home/bobo/code/BoW_examples/build/src/CMakeFiles/bow_sift.dir/BoFSIFT.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,6 +17,10 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "/usr/local/include/opencv"
   "/usr/local/include"
+  "/usr/local/include/DLib"
+  "/usr/local/include/DLib/../DUtils"
+  "/usr/local/include/DLib/../DUtilsCV"
+  "/usr/local/include/DLib/../DVision"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

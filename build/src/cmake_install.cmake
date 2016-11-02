@@ -1,4 +1,4 @@
-# Install script for directory: /home/bobo/code/BoW/src
+# Install script for directory: /home/bobo/code/BoW_examples/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

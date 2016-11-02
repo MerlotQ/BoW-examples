@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bobo/code/BoW
+CMAKE_SOURCE_DIR = /home/bobo/code/BoW_examples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bobo/code/BoW/build
+CMAKE_BINARY_DIR = /home/bobo/code/BoW_examples/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bobo/code/BoW/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW/build/CMakeFiles /home/bobo/code/BoW/build/src/CMakeFiles/progress.marks
-	cd /home/bobo/code/BoW/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW/build/CMakeFiles 0
+	cd /home/bobo/code/BoW_examples/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW_examples/build/CMakeFiles /home/bobo/code/BoW_examples/build/src/CMakeFiles/progress.marks
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW_examples/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bobo/code/BoW/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,22 +88,36 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bobo/code/BoW/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bobo/code/BoW/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bobo/code/BoW/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bobo/code/BoW_examples/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
+src/CMakeFiles/DBoW2_demo.dir/rule:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/DBoW2_demo.dir/rule
+.PHONY : src/CMakeFiles/DBoW2_demo.dir/rule
+
+# Convenience name for target.
+DBoW2_demo: src/CMakeFiles/DBoW2_demo.dir/rule
+.PHONY : DBoW2_demo
+
+# fast build rule for target.
+DBoW2_demo/fast:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/DBoW2_demo.dir/build.make src/CMakeFiles/DBoW2_demo.dir/build
+.PHONY : DBoW2_demo/fast
+
+# Convenience name for target.
 src/CMakeFiles/bow_sift.dir/rule:
-	cd /home/bobo/code/BoW/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bow_sift.dir/rule
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bow_sift.dir/rule
 .PHONY : src/CMakeFiles/bow_sift.dir/rule
 
 # Convenience name for target.
@@ -112,7 +126,7 @@ bow_sift: src/CMakeFiles/bow_sift.dir/rule
 
 # fast build rule for target.
 bow_sift/fast:
-	cd /home/bobo/code/BoW/build && $(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/build
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/build
 .PHONY : bow_sift/fast
 
 BoFSIFT.o: BoFSIFT.cpp.o
@@ -120,7 +134,7 @@ BoFSIFT.o: BoFSIFT.cpp.o
 
 # target to build an object file
 BoFSIFT.cpp.o:
-	cd /home/bobo/code/BoW/build && $(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/BoFSIFT.cpp.o
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/BoFSIFT.cpp.o
 .PHONY : BoFSIFT.cpp.o
 
 BoFSIFT.i: BoFSIFT.cpp.i
@@ -128,7 +142,7 @@ BoFSIFT.i: BoFSIFT.cpp.i
 
 # target to preprocess a source file
 BoFSIFT.cpp.i:
-	cd /home/bobo/code/BoW/build && $(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/BoFSIFT.cpp.i
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/BoFSIFT.cpp.i
 .PHONY : BoFSIFT.cpp.i
 
 BoFSIFT.s: BoFSIFT.cpp.s
@@ -136,8 +150,32 @@ BoFSIFT.s: BoFSIFT.cpp.s
 
 # target to generate assembly for a file
 BoFSIFT.cpp.s:
-	cd /home/bobo/code/BoW/build && $(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/BoFSIFT.cpp.s
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/BoFSIFT.cpp.s
 .PHONY : BoFSIFT.cpp.s
+
+DBoW2_demo.o: DBoW2_demo.cpp.o
+.PHONY : DBoW2_demo.o
+
+# target to build an object file
+DBoW2_demo.cpp.o:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/DBoW2_demo.dir/build.make src/CMakeFiles/DBoW2_demo.dir/DBoW2_demo.cpp.o
+.PHONY : DBoW2_demo.cpp.o
+
+DBoW2_demo.i: DBoW2_demo.cpp.i
+.PHONY : DBoW2_demo.i
+
+# target to preprocess a source file
+DBoW2_demo.cpp.i:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/DBoW2_demo.dir/build.make src/CMakeFiles/DBoW2_demo.dir/DBoW2_demo.cpp.i
+.PHONY : DBoW2_demo.cpp.i
+
+DBoW2_demo.s: DBoW2_demo.cpp.s
+.PHONY : DBoW2_demo.s
+
+# target to generate assembly for a file
+DBoW2_demo.cpp.s:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/DBoW2_demo.dir/build.make src/CMakeFiles/DBoW2_demo.dir/DBoW2_demo.cpp.s
+.PHONY : DBoW2_demo.cpp.s
 
 # Help Target
 help:
@@ -145,12 +183,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... DBoW2_demo"
 	@echo "... bow_sift"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BoFSIFT.o"
 	@echo "... BoFSIFT.i"
 	@echo "... BoFSIFT.s"
+	@echo "... DBoW2_demo.o"
+	@echo "... DBoW2_demo.i"
+	@echo "... DBoW2_demo.s"
 .PHONY : help
 
 
@@ -162,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bobo/code/BoW/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bobo/code/BoW_examples/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
