@@ -21,4 +21,16 @@ target_link_libraries( DBoW2_demo
     ${OpenCV_LIBS}
     ${DLib_LIBS}
     )
+option(BUILD_DemoBRIEF  "Build demo application with BRIEF features" ON)
+option(BUILD_DemoSURF   "Build demo application with SURF features"  ON)
+
+if(BUILD_DemoBRIEF)
+  add_executable(demo_brief loopdetector/demo_brief.cpp)
+  target_link_libraries(demo_brief DBoW2 ${OpenCV_LIBS} ${DLib_LIBS} )
+endif(BUILD_DemoBRIEF)
+
+if(BUILD_DemoSURF)
+  add_executable(demo_surf loopdetector/demo_surf.cpp)
+  target_link_libraries(demo_surf DBoW2 ${OpenCV_LIBS} ${DLib_LIBS} )
+endif(BUILD_DemoSURF)
 

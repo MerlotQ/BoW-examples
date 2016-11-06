@@ -541,7 +541,7 @@ void TemplatedVocabulary<TDescriptor,F>::create(
   m_nodes.clear();
   m_words.clear();
   
-  // expected_nodes = Sum_{i=0..L} ( k^i )
+  // expected_nodes = Sum_{i=0..L} ( k^i )=(k^(L+1)-1)/(K-1)
 	int expected_nodes = 
 		(int)((pow((double)m_k, (double)m_L + 1) - 1)/(m_k - 1));
 
@@ -555,13 +555,13 @@ void TemplatedVocabulary<TDescriptor,F>::create(
   // create root  
   m_nodes.push_back(Node(0)); // root
   
-  // create the tree
+  // create the tree，k-means++
   HKmeansStep(0, features, 1);
 
-  // create the words
+  // create the words,只有叶节点
   createWords();
 
-  // and set the weight of each node of the tree
+  // and set the weight of each node of the tree，根据IDF配置每个叶节点的权重
   setNodeWeights(training_features);
   
 }
@@ -936,8 +936,8 @@ void TemplatedVocabulary<TDescriptor,F>::setNodeWeights
   {
     // IDF and TF-IDF: we calculte the idf path now
 
-    // Note: this actually calculates the idf part of the tf-idf score.
-    // The complete tf-idf score is calculated in ::transform
+    // Note: this actually calculates the idf part of the tf-idf score.词典中word 的权重只有idf部分
+    // The complete tf-idf score is calculated in ::transform，只有在transform即将特征转为词汇时才是tf-idf
 
     vector<unsigned int> Ni(NWords, 0);
     vector<bool> counted(NWords, false);

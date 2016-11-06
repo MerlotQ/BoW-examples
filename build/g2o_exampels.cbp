@@ -5,7 +5,7 @@
       <Option title="g2o_exampels" />
       <Option makefile_is_custom="1" />
       <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\usr\local\share\OpenCV\;" />
+      <Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\usr\local\share\OpenCV\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\DLib\;" />
       <Build>
       <Target title="all">
          <Option working_dir="/home/bobo/code/BoW_examples/build" />
@@ -27,6 +27,50 @@
             <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="DBoW2_demo">
+         <Option output="/home/bobo/code/BoW_examples/bin/DBoW2_demo" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/BoW_examples/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/bobo/code/BoW_examples/include" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/DLib" />
+            <Add directory="/usr/local/include/DLib/../DUtils" />
+            <Add directory="/usr/local/include/DLib/../DUtilsCV" />
+            <Add directory="/usr/local/include/DLib/../DVision" />
+            <Add directory="/usr/local/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 DBoW2_demo" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="DBoW2_demo/fast">
+         <Option output="/home/bobo/code/BoW_examples/bin/DBoW2_demo" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/BoW_examples/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/bobo/code/BoW_examples/include" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/DLib" />
+            <Add directory="/usr/local/include/DLib/../DUtils" />
+            <Add directory="/usr/local/include/DLib/../DUtilsCV" />
+            <Add directory="/usr/local/include/DLib/../DVision" />
+            <Add directory="/usr/local/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 DBoW2_demo/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="bow_sift">
          <Option output="/home/bobo/code/BoW_examples/bin/bow_sift" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/bobo/code/BoW_examples/bin" />
@@ -36,6 +80,10 @@
          <Compiler>
             <Add directory="/home/bobo/code/BoW_examples/include" />
             <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/DLib" />
+            <Add directory="/usr/local/include/DLib/../DUtils" />
+            <Add directory="/usr/local/include/DLib/../DUtilsCV" />
+            <Add directory="/usr/local/include/DLib/../DVision" />
             <Add directory="/usr/local/include/opencv" />
          </Compiler>
          <MakeCommands>
@@ -54,6 +102,10 @@
          <Compiler>
             <Add directory="/home/bobo/code/BoW_examples/include" />
             <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/DLib" />
+            <Add directory="/usr/local/include/DLib/../DUtils" />
+            <Add directory="/usr/local/include/DLib/../DUtilsCV" />
+            <Add directory="/usr/local/include/DLib/../DVision" />
             <Add directory="/usr/local/include/opencv" />
          </Compiler>
          <MakeCommands>
@@ -63,8 +115,102 @@
             <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="demo_brief">
+         <Option output="/home/bobo/code/BoW_examples/bin/demo_brief" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/BoW_examples/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/bobo/code/BoW_examples/include" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/DLib" />
+            <Add directory="/usr/local/include/DLib/../DUtils" />
+            <Add directory="/usr/local/include/DLib/../DUtilsCV" />
+            <Add directory="/usr/local/include/DLib/../DVision" />
+            <Add directory="/usr/local/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 demo_brief" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="demo_brief/fast">
+         <Option output="/home/bobo/code/BoW_examples/bin/demo_brief" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/BoW_examples/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/bobo/code/BoW_examples/include" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/DLib" />
+            <Add directory="/usr/local/include/DLib/../DUtils" />
+            <Add directory="/usr/local/include/DLib/../DUtilsCV" />
+            <Add directory="/usr/local/include/DLib/../DVision" />
+            <Add directory="/usr/local/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 demo_brief/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="demo_surf">
+         <Option output="/home/bobo/code/BoW_examples/bin/demo_surf" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/BoW_examples/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/bobo/code/BoW_examples/include" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/DLib" />
+            <Add directory="/usr/local/include/DLib/../DUtils" />
+            <Add directory="/usr/local/include/DLib/../DUtilsCV" />
+            <Add directory="/usr/local/include/DLib/../DVision" />
+            <Add directory="/usr/local/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 demo_surf" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="demo_surf/fast">
+         <Option output="/home/bobo/code/BoW_examples/bin/demo_surf" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/bobo/code/BoW_examples/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/bobo/code/BoW_examples/include" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/DLib" />
+            <Add directory="/usr/local/include/DLib/../DUtils" />
+            <Add directory="/usr/local/include/DLib/../DUtilsCV" />
+            <Add directory="/usr/local/include/DLib/../DVision" />
+            <Add directory="/usr/local/include/opencv" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 demo_surf/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bobo/code/BoW_examples/build/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       </Build>
       <Unit filename="/home/bobo/code/BoW_examples/src/BoFSIFT.cpp">
+      </Unit>
+      <Unit filename="/home/bobo/code/BoW_examples/src/DBoW2_demo.cpp">
+      </Unit>
+      <Unit filename="/home/bobo/code/BoW_examples/src/loopdetector/demo_brief.cpp">
+      </Unit>
+      <Unit filename="/home/bobo/code/BoW_examples/src/loopdetector/demo_surf.cpp">
       </Unit>
       <Unit filename="/home/bobo/code/BoW_examples/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />
@@ -83,6 +229,9 @@
       </Unit>
       <Unit filename="/home/bobo/code/BoW_examples/../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
           <Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\" />
+      </Unit>
+      <Unit filename="/home/bobo/code/BoW_examples/../../../../usr/local/lib/cmake/DLib/DLibConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\DLib\" />
       </Unit>
    </Project>
 </CodeBlocks_project_file>

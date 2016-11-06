@@ -127,6 +127,32 @@ bow_sift/fast:
 	$(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/build
 .PHONY : bow_sift/fast
 
+#=============================================================================
+# Target rules for targets named demo_brief
+
+# Build rule for target.
+demo_brief: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo_brief
+.PHONY : demo_brief
+
+# fast build rule for target.
+demo_brief/fast:
+	$(MAKE) -f src/CMakeFiles/demo_brief.dir/build.make src/CMakeFiles/demo_brief.dir/build
+.PHONY : demo_brief/fast
+
+#=============================================================================
+# Target rules for targets named demo_surf
+
+# Build rule for target.
+demo_surf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo_surf
+.PHONY : demo_surf
+
+# fast build rule for target.
+demo_surf/fast:
+	$(MAKE) -f src/CMakeFiles/demo_surf.dir/build.make src/CMakeFiles/demo_surf.dir/build
+.PHONY : demo_surf/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -137,6 +163,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DBoW2_demo"
 	@echo "... bow_sift"
+	@echo "... demo_brief"
+	@echo "... demo_surf"
 .PHONY : help
 
 

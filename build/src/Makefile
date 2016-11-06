@@ -129,6 +129,34 @@ bow_sift/fast:
 	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/bow_sift.dir/build.make src/CMakeFiles/bow_sift.dir/build
 .PHONY : bow_sift/fast
 
+# Convenience name for target.
+src/CMakeFiles/demo_brief.dir/rule:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/demo_brief.dir/rule
+.PHONY : src/CMakeFiles/demo_brief.dir/rule
+
+# Convenience name for target.
+demo_brief: src/CMakeFiles/demo_brief.dir/rule
+.PHONY : demo_brief
+
+# fast build rule for target.
+demo_brief/fast:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/demo_brief.dir/build.make src/CMakeFiles/demo_brief.dir/build
+.PHONY : demo_brief/fast
+
+# Convenience name for target.
+src/CMakeFiles/demo_surf.dir/rule:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/demo_surf.dir/rule
+.PHONY : src/CMakeFiles/demo_surf.dir/rule
+
+# Convenience name for target.
+demo_surf: src/CMakeFiles/demo_surf.dir/rule
+.PHONY : demo_surf
+
+# fast build rule for target.
+demo_surf/fast:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/demo_surf.dir/build.make src/CMakeFiles/demo_surf.dir/build
+.PHONY : demo_surf/fast
+
 BoFSIFT.o: BoFSIFT.cpp.o
 .PHONY : BoFSIFT.o
 
@@ -177,6 +205,54 @@ DBoW2_demo.cpp.s:
 	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/DBoW2_demo.dir/build.make src/CMakeFiles/DBoW2_demo.dir/DBoW2_demo.cpp.s
 .PHONY : DBoW2_demo.cpp.s
 
+loopdetector/demo_brief.o: loopdetector/demo_brief.cpp.o
+.PHONY : loopdetector/demo_brief.o
+
+# target to build an object file
+loopdetector/demo_brief.cpp.o:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/demo_brief.dir/build.make src/CMakeFiles/demo_brief.dir/loopdetector/demo_brief.cpp.o
+.PHONY : loopdetector/demo_brief.cpp.o
+
+loopdetector/demo_brief.i: loopdetector/demo_brief.cpp.i
+.PHONY : loopdetector/demo_brief.i
+
+# target to preprocess a source file
+loopdetector/demo_brief.cpp.i:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/demo_brief.dir/build.make src/CMakeFiles/demo_brief.dir/loopdetector/demo_brief.cpp.i
+.PHONY : loopdetector/demo_brief.cpp.i
+
+loopdetector/demo_brief.s: loopdetector/demo_brief.cpp.s
+.PHONY : loopdetector/demo_brief.s
+
+# target to generate assembly for a file
+loopdetector/demo_brief.cpp.s:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/demo_brief.dir/build.make src/CMakeFiles/demo_brief.dir/loopdetector/demo_brief.cpp.s
+.PHONY : loopdetector/demo_brief.cpp.s
+
+loopdetector/demo_surf.o: loopdetector/demo_surf.cpp.o
+.PHONY : loopdetector/demo_surf.o
+
+# target to build an object file
+loopdetector/demo_surf.cpp.o:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/demo_surf.dir/build.make src/CMakeFiles/demo_surf.dir/loopdetector/demo_surf.cpp.o
+.PHONY : loopdetector/demo_surf.cpp.o
+
+loopdetector/demo_surf.i: loopdetector/demo_surf.cpp.i
+.PHONY : loopdetector/demo_surf.i
+
+# target to preprocess a source file
+loopdetector/demo_surf.cpp.i:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/demo_surf.dir/build.make src/CMakeFiles/demo_surf.dir/loopdetector/demo_surf.cpp.i
+.PHONY : loopdetector/demo_surf.cpp.i
+
+loopdetector/demo_surf.s: loopdetector/demo_surf.cpp.s
+.PHONY : loopdetector/demo_surf.s
+
+# target to generate assembly for a file
+loopdetector/demo_surf.cpp.s:
+	cd /home/bobo/code/BoW_examples/build && $(MAKE) -f src/CMakeFiles/demo_surf.dir/build.make src/CMakeFiles/demo_surf.dir/loopdetector/demo_surf.cpp.s
+.PHONY : loopdetector/demo_surf.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -185,6 +261,8 @@ help:
 	@echo "... depend"
 	@echo "... DBoW2_demo"
 	@echo "... bow_sift"
+	@echo "... demo_brief"
+	@echo "... demo_surf"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BoFSIFT.o"
@@ -193,6 +271,12 @@ help:
 	@echo "... DBoW2_demo.o"
 	@echo "... DBoW2_demo.i"
 	@echo "... DBoW2_demo.s"
+	@echo "... loopdetector/demo_brief.o"
+	@echo "... loopdetector/demo_brief.i"
+	@echo "... loopdetector/demo_brief.s"
+	@echo "... loopdetector/demo_surf.o"
+	@echo "... loopdetector/demo_surf.i"
+	@echo "... loopdetector/demo_surf.s"
 .PHONY : help
 
 

@@ -61,11 +61,15 @@ CMAKE_BINARY_DIR = /home/bobo/code/BoW_examples/build
 # Convenience name for "all" pass in the directory.
 src/all: src/CMakeFiles/DBoW2_demo.dir/all
 src/all: src/CMakeFiles/bow_sift.dir/all
+src/all: src/CMakeFiles/demo_brief.dir/all
+src/all: src/CMakeFiles/demo_surf.dir/all
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
 src/clean: src/CMakeFiles/DBoW2_demo.dir/clean
 src/clean: src/CMakeFiles/bow_sift.dir/clean
+src/clean: src/CMakeFiles/demo_brief.dir/clean
+src/clean: src/CMakeFiles/demo_surf.dir/clean
 .PHONY : src/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -140,6 +144,76 @@ src/CMakeFiles/bow_sift.dir/clean:
 
 # clean rule for target.
 clean: src/CMakeFiles/bow_sift.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/demo_brief.dir
+
+# All Build rule for target.
+src/CMakeFiles/demo_brief.dir/all:
+	$(MAKE) -f src/CMakeFiles/demo_brief.dir/build.make src/CMakeFiles/demo_brief.dir/depend
+	$(MAKE) -f src/CMakeFiles/demo_brief.dir/build.make src/CMakeFiles/demo_brief.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bobo/code/BoW_examples/build/CMakeFiles  3
+	@echo "Built target demo_brief"
+.PHONY : src/CMakeFiles/demo_brief.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/demo_brief.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/demo_brief.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW_examples/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/demo_brief.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW_examples/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/demo_brief.dir/rule
+
+# Convenience name for target.
+demo_brief: src/CMakeFiles/demo_brief.dir/rule
+.PHONY : demo_brief
+
+# clean rule for target.
+src/CMakeFiles/demo_brief.dir/clean:
+	$(MAKE) -f src/CMakeFiles/demo_brief.dir/build.make src/CMakeFiles/demo_brief.dir/clean
+.PHONY : src/CMakeFiles/demo_brief.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/demo_brief.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/demo_surf.dir
+
+# All Build rule for target.
+src/CMakeFiles/demo_surf.dir/all:
+	$(MAKE) -f src/CMakeFiles/demo_surf.dir/build.make src/CMakeFiles/demo_surf.dir/depend
+	$(MAKE) -f src/CMakeFiles/demo_surf.dir/build.make src/CMakeFiles/demo_surf.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/bobo/code/BoW_examples/build/CMakeFiles  4
+	@echo "Built target demo_surf"
+.PHONY : src/CMakeFiles/demo_surf.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/demo_surf.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/demo_surf.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW_examples/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/demo_surf.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bobo/code/BoW_examples/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/demo_surf.dir/rule
+
+# Convenience name for target.
+demo_surf: src/CMakeFiles/demo_surf.dir/rule
+.PHONY : demo_surf
+
+# clean rule for target.
+src/CMakeFiles/demo_surf.dir/clean:
+	$(MAKE) -f src/CMakeFiles/demo_surf.dir/build.make src/CMakeFiles/demo_surf.dir/clean
+.PHONY : src/CMakeFiles/demo_surf.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/demo_surf.dir/clean
 .PHONY : clean
 
 #=============================================================================

@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Build demo application with BRIEF features
+BUILD_DemoBRIEF:BOOL=ON
+
+//Build demo application with SURF features
+BUILD_DemoSURF:BOOL=ON
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 

@@ -48,4 +48,6 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 SET(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/DBoW2_demo.dir/DependInfo.cmake"
   "src/CMakeFiles/bow_sift.dir/DependInfo.cmake"
+  "src/CMakeFiles/demo_brief.dir/DependInfo.cmake"
+  "src/CMakeFiles/demo_surf.dir/DependInfo.cmake"
   )
