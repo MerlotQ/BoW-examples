@@ -18,5 +18,7 @@ make
 (1) ./bin/bow_sift
 (2) ./DBoW_demo 
 use DBoW2 verion 1 to build a vocabulary KD-tree,a image database of this BoW, CBIR the query image 
+(3)./demo_surf
+use DBoW2 to detect loop in SLAM
 
 
